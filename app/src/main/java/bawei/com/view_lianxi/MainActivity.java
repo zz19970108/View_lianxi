@@ -12,12 +12,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        View view1 =  findViewById(R.id.view);
-
         MyView myView=new MyView(this);
         setContentView(myView);
 
-        view1.setOnClickListener(new View.OnClickListener() {
+        myView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this,"你好，机器人001为您服务",Toast.LENGTH_SHORT).show();
